@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = ">=5.3.5"
+pytest-aiohttp = "==0.*,>=0.3.0"
+pytest-cov = ">=2.8.1"
+tox = ">=3.14.5"
+flake8 = ">=3.7.9"
+isort = "==4.3.21"
+ipdb = "*"
+
+[packages]
+aiohttp = "<3.8,>=3.6.2"
+aiohttp-session = {extras = ["aioredis"], git = "https://github.com/TheDoctorAI/aiohttp-session", ref = "master"}
+blake3 = "==0.*,>=0.1.8"
+
+[requires]
+python_version = "3.8"

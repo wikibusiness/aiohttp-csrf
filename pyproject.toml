@@ -1,0 +1,24 @@
+[tool]
+[tool.poetry]
+name = "aiohttp_csrf"
+version = "0.1.1"
+description = "CSRF protection for aiohttp-server"
+authors = ["TensorTom"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/TensorTom/aiohttp-csrf"
+
+[tool.poetry.dependencies]
+python = ">=3.8.3, <4"
+aiohttp = ">=3.6.2, <4.1"
+aiohttp-session = "^2"
+blake3 = "^0.1.8"
+
+[tool.poetry.dev-dependencies]
+flake8 = ">=3.7.9"
+ipdb = "*"
+isort = "==4.3.21"
+pytest = ">=5.3.5"
+pytest-aiohttp = "^0.3"
+pytest-cov = ">=2.8.1"
+tox = ">=3.14.5"
